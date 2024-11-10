@@ -1,0 +1,25 @@
+.gitignore# Ignore Python bytecode files
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignore virtual environment directories (e.g., venv, .venv, env)
+backend/venv/
+.venv/
+env/
+env.bak/
+
+# Ignore IDE configurations (e.g., PyCharm)
+backend/.idea/
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore Django specific files
+*.log
+*.pot
+*.pyc
+*.pyo
+*.sqlite3
+db.sqlite3
