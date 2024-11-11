@@ -1,3 +1,7 @@
-from django.shortcuts import render
+from rest_framework import viewsets
+from .models import BioSignals
+from .serializers import BioSignalsSerializer
 
-# Create your views here.
+class BioSignalsViewSet(viewsets.ModelViewSet):
+    queryset = BioSignals.objects.all()
+    serializer_class = BioSignalsSerializer
